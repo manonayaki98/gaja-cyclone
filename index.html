@@ -50,7 +50,7 @@
 	<script type="text/JavaScript">
 
     //Create the map
-       var old_ortho = new L.tileLayer.wms('http://localhost:8080/geoserver/Raster/wms', {
+       var old_ortho = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/Raster/wms', {
             layers: 'Raster:old1',
             maxZoom: 26,
             format: 'image/png',
@@ -63,14 +63,14 @@
         
     };
      
-     var tree_Count_New = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+     var tree_Count_New = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: 'vector:TREE_COUNT_22_1-08-2018',
             maxZoom: 26,
             format: 'image/png',
             transparent: true,
 	    
         });	
-      var tree_Count_Old = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+      var tree_Count_Old = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: 'vector:TREE_COUNT_05-09-2018',
             maxZoom: 26,
             format: 'image/png',
@@ -80,14 +80,14 @@
         
       
    
-     var study_area = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+     var study_area = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: ' vector:FMB_parcel',
             maxZoom: 26,
             format: 'image/png',
             transparent: true,
         
         }); 
-        var fmb1 = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+        var fmb1 = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: ' vector:FMB%20line',
             maxZoom: 26,
             format: 'image/png',
@@ -111,7 +111,7 @@ L.control.layers(baseLayers,overlays).addTo(map);
 
 
 //Create the map1
-       var new_ortho= new L.tileLayer.wms('http://localhost:8080/geoserver/Raster/wms', {
+       var new_ortho= new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/Raster/wms', {
             layers: 'Raster:new',
             maxZoom: 26,
             format: 'image/png',
@@ -133,7 +133,7 @@ L.control.layers(baseLayers,overlays).addTo(map);
 	    
         });	
 
-     var tree_count_old = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+     var tree_count_old = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: 'vector:TREE_COUNT_05-09-2018',
             maxZoom: 26,
             format: 'image/png',
@@ -141,14 +141,14 @@ L.control.layers(baseLayers,overlays).addTo(map);
         
         }); 
         
-      var study_Area = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+      var study_Area = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: ' vector:FMB_parcel',
             maxZoom: 26,
             format: 'image/png',
             transparent: true,
         
         }); 
-    var fmb = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+    var fmb = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: ' vector:FMB%20line',
             maxZoom: 26,
             format: 'image/png',
