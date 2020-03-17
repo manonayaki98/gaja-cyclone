@@ -125,7 +125,7 @@ L.control.layers(baseLayers,overlays).addTo(map);
         
     };
      
-     var tree_count_new = new L.tileLayer.wms('http://localhost:8080/geoserver/vector/wms', {
+     var tree_count_new = new L.tileLayer.wms('http://e2228c9f.ngrok.io/geoserver/vector/wms', {
             layers: 'vector:TREE_COUNT_22_1-08-2018',
             maxZoom: 26,
             format: 'image/png',
